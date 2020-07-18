@@ -1,0 +1,470 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		178D5F8324C2889C000B9D79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178D5F8224C2889C000B9D79 /* AppDelegate.swift */; };
+		178D5F8524C2889C000B9D79 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178D5F8424C2889C000B9D79 /* SceneDelegate.swift */; };
+		178D5F8724C2889C000B9D79 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178D5F8624C2889C000B9D79 /* ViewController.swift */; };
+		178D5F8A24C2889C000B9D79 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 178D5F8824C2889C000B9D79 /* Main.storyboard */; };
+		178D5F8C24C288A0000B9D79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 178D5F8B24C288A0000B9D79 /* Assets.xcassets */; };
+		178D5F8F24C288A0000B9D79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 178D5F8D24C288A0000B9D79 /* LaunchScreen.storyboard */; };
+		178D5F9A24C288A1000B9D79 /* RemoteVoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178D5F9924C288A1000B9D79 /* RemoteVoteTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		178D5F9624C288A1000B9D79 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 178D5F7724C2889C000B9D79 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 178D5F7E24C2889C000B9D79;
+			remoteInfo = RemoteVote;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		178D5F7F24C2889C000B9D79 /* RemoteVote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RemoteVote.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		178D5F8224C2889C000B9D79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		178D5F8424C2889C000B9D79 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		178D5F8624C2889C000B9D79 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		178D5F8924C2889C000B9D79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		178D5F8B24C288A0000B9D79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		178D5F8E24C288A0000B9D79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		178D5F9024C288A0000B9D79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		178D5F9524C288A1000B9D79 /* RemoteVoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RemoteVoteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		178D5F9924C288A1000B9D79 /* RemoteVoteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteVoteTests.swift; sourceTree = "<group>"; };
+		178D5F9B24C288A1000B9D79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		178D5F7C24C2889C000B9D79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		178D5F9224C288A1000B9D79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		178D5F7624C2889C000B9D79 = {
+			isa = PBXGroup;
+			children = (
+				178D5F8124C2889C000B9D79 /* RemoteVote */,
+				178D5F9824C288A1000B9D79 /* RemoteVoteTests */,
+				178D5F8024C2889C000B9D79 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		178D5F8024C2889C000B9D79 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				178D5F7F24C2889C000B9D79 /* RemoteVote.app */,
+				178D5F9524C288A1000B9D79 /* RemoteVoteTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		178D5F8124C2889C000B9D79 /* RemoteVote */ = {
+			isa = PBXGroup;
+			children = (
+				178D5F8224C2889C000B9D79 /* AppDelegate.swift */,
+				178D5F8424C2889C000B9D79 /* SceneDelegate.swift */,
+				178D5F8624C2889C000B9D79 /* ViewController.swift */,
+				178D5F8824C2889C000B9D79 /* Main.storyboard */,
+				178D5F8B24C288A0000B9D79 /* Assets.xcassets */,
+				178D5F8D24C288A0000B9D79 /* LaunchScreen.storyboard */,
+				178D5F9024C288A0000B9D79 /* Info.plist */,
+			);
+			path = RemoteVote;
+			sourceTree = "<group>";
+		};
+		178D5F9824C288A1000B9D79 /* RemoteVoteTests */ = {
+			isa = PBXGroup;
+			children = (
+				178D5F9924C288A1000B9D79 /* RemoteVoteTests.swift */,
+				178D5F9B24C288A1000B9D79 /* Info.plist */,
+			);
+			path = RemoteVoteTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		178D5F7E24C2889C000B9D79 /* RemoteVote */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 178D5F9E24C288A1000B9D79 /* Build configuration list for PBXNativeTarget "RemoteVote" */;
+			buildPhases = (
+				178D5F7B24C2889C000B9D79 /* Sources */,
+				178D5F7C24C2889C000B9D79 /* Frameworks */,
+				178D5F7D24C2889C000B9D79 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RemoteVote;
+			productName = RemoteVote;
+			productReference = 178D5F7F24C2889C000B9D79 /* RemoteVote.app */;
+			productType = "com.apple.product-type.application";
+		};
+		178D5F9424C288A1000B9D79 /* RemoteVoteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 178D5FA124C288A1000B9D79 /* Build configuration list for PBXNativeTarget "RemoteVoteTests" */;
+			buildPhases = (
+				178D5F9124C288A1000B9D79 /* Sources */,
+				178D5F9224C288A1000B9D79 /* Frameworks */,
+				178D5F9324C288A1000B9D79 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				178D5F9724C288A1000B9D79 /* PBXTargetDependency */,
+			);
+			name = RemoteVoteTests;
+			productName = RemoteVoteTests;
+			productReference = 178D5F9524C288A1000B9D79 /* RemoteVoteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		178D5F7724C2889C000B9D79 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "POPVOX, Inc";
+				TargetAttributes = {
+					178D5F7E24C2889C000B9D79 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					178D5F9424C288A1000B9D79 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 178D5F7E24C2889C000B9D79;
+					};
+				};
+			};
+			buildConfigurationList = 178D5F7A24C2889C000B9D79 /* Build configuration list for PBXProject "RemoteVote" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 178D5F7624C2889C000B9D79;
+			productRefGroup = 178D5F8024C2889C000B9D79 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				178D5F7E24C2889C000B9D79 /* RemoteVote */,
+				178D5F9424C288A1000B9D79 /* RemoteVoteTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		178D5F7D24C2889C000B9D79 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				178D5F8F24C288A0000B9D79 /* LaunchScreen.storyboard in Resources */,
+				178D5F8C24C288A0000B9D79 /* Assets.xcassets in Resources */,
+				178D5F8A24C2889C000B9D79 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		178D5F9324C288A1000B9D79 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		178D5F7B24C2889C000B9D79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				178D5F8724C2889C000B9D79 /* ViewController.swift in Sources */,
+				178D5F8324C2889C000B9D79 /* AppDelegate.swift in Sources */,
+				178D5F8524C2889C000B9D79 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		178D5F9124C288A1000B9D79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				178D5F9A24C288A1000B9D79 /* RemoteVoteTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		178D5F9724C288A1000B9D79 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 178D5F7E24C2889C000B9D79 /* RemoteVote */;
+			targetProxy = 178D5F9624C288A1000B9D79 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		178D5F8824C2889C000B9D79 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				178D5F8924C2889C000B9D79 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		178D5F8D24C288A0000B9D79 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				178D5F8E24C288A0000B9D79 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		178D5F9C24C288A1000B9D79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		178D5F9D24C288A1000B9D79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		178D5F9F24C288A1000B9D79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RemoteVote/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.popvox.RemoteVote;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		178D5FA024C288A1000B9D79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RemoteVote/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.popvox.RemoteVote;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		178D5FA224C288A1000B9D79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RemoteVoteTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.popvox.RemoteVoteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RemoteVote.app/RemoteVote";
+			};
+			name = Debug;
+		};
+		178D5FA324C288A1000B9D79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RemoteVoteTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.popvox.RemoteVoteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RemoteVote.app/RemoteVote";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		178D5F7A24C2889C000B9D79 /* Build configuration list for PBXProject "RemoteVote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				178D5F9C24C288A1000B9D79 /* Debug */,
+				178D5F9D24C288A1000B9D79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		178D5F9E24C288A1000B9D79 /* Build configuration list for PBXNativeTarget "RemoteVote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				178D5F9F24C288A1000B9D79 /* Debug */,
+				178D5FA024C288A1000B9D79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		178D5FA124C288A1000B9D79 /* Build configuration list for PBXNativeTarget "RemoteVoteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				178D5FA224C288A1000B9D79 /* Debug */,
+				178D5FA324C288A1000B9D79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 178D5F7724C2889C000B9D79 /* Project object */;
+}
