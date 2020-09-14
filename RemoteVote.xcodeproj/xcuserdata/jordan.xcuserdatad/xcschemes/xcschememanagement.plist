@@ -4,10 +4,90 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Example (Playground) 1.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
+		<key>Example (Playground) 2.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>8</integer>
+		</dict>
+		<key>Example (Playground).xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>Playground (Playground) 1.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>Playground (Playground) 2.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
+		<key>Playground (Playground).xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
 		<key>RemoteVote.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+		<key>RemoteVoteCore.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>RemoteVoteUIKit.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>178D5F7E24C2889C000B9D79</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>178D5F9424C288A1000B9D79</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>17949860251295090003B2BB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>179498ED2512AA300003B2BB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>17A69CB325123C3600673647</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

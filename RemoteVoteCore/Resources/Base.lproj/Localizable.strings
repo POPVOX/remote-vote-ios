@@ -1,0 +1,32 @@
+/* 
+  Localizable.strings
+  RemoteVote
+
+  Created by Jordan Kay on 9/7/20.
+  Copyright © 2020 POPVOX, Inc. All rights reserved.
+*/
+
+"Login.prompt.email" = "Enter email to receive your sign-in link.";
+"Login.placeholder.textField.email" = "Email";
+"Login.title.button.login" = "Log In";
+"Login.Activation.prompt" = "Check your inbox";
+"Login.Activation.directions" = "Click the link to log in.";
+"Login.Activation.explanation" = "(This step helps protect your security)";
+"Voting.Components.Summary.emptyState" = "(Open votes will appear here when they begin)";
+"Voting.Components.Confirmation.choice" = "votes “%@” on";
+"Voting.Components.Confirmation.timestamp" = "at %@ on %@";
+"Voting.Components.Confirmation.title.button.changeVote" = "Change vote";
+"Voting.Components.Confirmation.title.button.confirmVote" = "Confirm vote";
+"Voting.Components.Confirmation.title.button.voteConfirmed" = "Vote confirmed";
+"Voting.Components.Confirmation.footer.confirmVote" = "By clicking “confirm vote,” you attest and affirm that you are the constitutionally elected public official named above";
+"Voting.Components.Confirmation.representative" = "Representative %@ %@";
+"Voting.Components.Contact.prompt" = "Got questions?";
+"Voting.Components.Contact.body" = "Contact %@ via %@ or by %@ %@";
+"Voting.Components.Contact.link.body.email" = "email";
+"Voting.Components.Contact.link.body.phone" = "phone";
+"Voting.Components.Contact.subject.email" = "RemoteVote App Issue";
+"Voting.Header.body.active" = "Vote in progress";
+"Voting.Header.body.inactive" = "No pending vote";
+"Voting.Timer.prompt" = "Time remaining:";
+"HUD.message.success" = "Success";
+"HUD.message.error.network" = "Network Error";

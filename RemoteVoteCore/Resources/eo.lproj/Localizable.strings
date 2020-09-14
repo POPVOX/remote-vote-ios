@@ -1,0 +1,32 @@
+/* 
+  Localizable.strings
+  RemoteVote
+
+  Created by Jordan Kay on 9/7/20.
+  Copyright © 2020 POPVOX, Inc. All rights reserved.
+*/
+
+"Login.prompt.email" = "Enigu retpoŝtadreson por ricevi vian ensalutan ligon.";
+"Login.placeholder.textField.email" = "Retpoŝtadreso";
+"Login.title.button.login" = "Ensaluti";
+"Login.Activation.prompt" = "Kontrolu vian enirkeston";
+"Login.Activation.directions" = "Alklaku la ligon por ensaluti.";
+"Login.Activation.explanation" = "(Ĉi tiu paŝo helpas protekti vian sekurecon)";
+"Voting.Components.Summary.emptyState" = "(Malfermaj voĉdonoj aperos ĉi tie kiam ili komenciĝos)";
+"Voting.Components.Confirmation.choice" = "voĉdonas “%@” pri";
+"Voting.Components.Confirmation.timestamp" = "je %@ la %@";
+"Voting.Components.Confirmation.title.button.changeVote" = "Ŝanĝi voĉdonon";
+"Voting.Components.Confirmation.title.button.confirmVote" = "Konfirmi voĉdonon";
+"Voting.Components.Confirmation.title.button.voteConfirmed" = "Voĉdono konfirmita";
+"Voting.Components.Confirmation.footer.confirmVote" = "Alklakante “konfirmi voĉdonon”, vi atestas kaj asertas, ke vi estas la konstitucie elektita publika oficialulo supre nomata";
+"Voting.Components.Confirmation.representative" = "Reprezentanto %@ %@";
+"Voting.Components.Contact.prompt" = "Ĉu vi havas demandojn?";
+"Voting.Components.Contact.body" = "Kontaktu %@ %@ aŭ %@ %@";
+"Voting.Components.Contact.link.body.email" = "retpoŝte";
+"Voting.Components.Contact.link.body.phone" = "telefone";
+"Voting.Components.Contact.subject.email" = "Problemo pri la Apo RemoteVote";
+"Voting.Header.body.active" = "Voĉdono en progreso";
+"Voting.Header.body.inactive" = "Neniu pritraktata voĉdono";
+"Voting.Timer.prompt" = "Restanta tempo:";
+"HUD.message.success" = "Sukceso";
+"HUD.message.error.network" = "Reta Eraro";
