@@ -28,7 +28,8 @@ private extension App {
 			return userEffect(in: environment)
 		case .event(.accessTokenUpdated(.none)):
 			state.loginState = .init()
-		case let .event(.userRetrieved(user)), let .event(.userFetched(.success(user))):
+		case let .event(.userRetrieved(user)),
+			 let .event(.userFetched(.success(user))):
 			state.mainState = .init(user: user)
 			return authenticatedEffect
 		case let .login(.event(event)):

@@ -8,7 +8,6 @@
 
 public extension Voting.Components.Contact {
 	private typealias ContactStrings = Strings.Voting.Components.Contact
-
 	
 	static let prompt = ContactStrings.prompt
 	static let emailSubject = ContactStrings.Subject.email

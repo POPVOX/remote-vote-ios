@@ -48,7 +48,8 @@ extension App.Delegate: UIApplicationDelegate {
 
 		switch action {
 		case "activate":
-			let token = components.path.split(separator: "/").last.map(String.init)!
+			let value = components.path.split(separator: "/").last.map(String.init)!
+			let token = RemoteVote.Authorization.API.Activation.Token(value: value)
 			viewStore.send(.login(.request(.activate(token: token))))
 			return true
 		case "cast-vote":

@@ -9,7 +9,7 @@
 import Emissary
 
 extension RemoteVote.Authorization.API {
-	func authenticate(withEmail email: String) -> Request<String> {
+	func authenticate(with email: User.Email) -> Request<String> {
 		let path = Authentication.path
 		let payload = Authentication.Payload(email: email)
 		return post(payload, to: path)
@@ -36,7 +36,7 @@ extension RemoteVote.Authorization.API.Authentication: PathAccessible {
 // MARK: -
 private extension RemoteVote.Authorization.API.Authentication {
 	struct Payload {
-		let email: String
+		let email: User.Email
 	}
 }
 

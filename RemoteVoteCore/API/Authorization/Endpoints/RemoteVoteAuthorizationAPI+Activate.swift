@@ -9,7 +9,7 @@
 import Emissary
 
 extension RemoteVote.Authorization.API {
-	func activate(withToken token: String) -> Request<RemoteVote.API.AccessToken> {
+	func activate(with token: Activation.Token) -> Request<RemoteVote.API.AccessToken> {
 		let path = Activation.path
 		let payload = Activation.Payload(token: token)
 		return post(payload, to: path)
@@ -17,18 +17,13 @@ extension RemoteVote.Authorization.API {
 }
 
 // MARK: -
-private extension RemoteVote.Authorization.API {
-	enum Activation {}
-}
-
-// MARK: -
 extension RemoteVote.Authorization.API.Activation: PathAccessible {
 	// MARK: SubpathRepresentable
-	enum PathComponents: String, PathComponent {
+	public enum PathComponents: String, PathComponent {
 		case activate
 	}
 
-	static var component: PathComponents {
+	public static var component: PathComponents {
 		.activate
 	}
 }
@@ -36,7 +31,7 @@ extension RemoteVote.Authorization.API.Activation: PathAccessible {
 // MARK: -
 private extension RemoteVote.Authorization.API.Activation {
 	struct Payload {
-		let token: String
+		let token: Token
 	}
 }
 

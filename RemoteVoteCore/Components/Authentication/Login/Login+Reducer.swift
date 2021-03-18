@@ -16,12 +16,12 @@ extension Login {
 		case .request(.authenticate):
 			guard let email = state.email else { return .none }
 			state.$authenticationResponse.indicateFetching()
-			return authenticationEffect(in: environment, forEmail: email)
+			return authenticationEffect(in: environment, using: email)
 		case let .request(.activate(token)):
 			state.$accessToken.indicateFetching()
-			return activationEffect(in: environment, forToken: token)
-		case let .event(.emailUpdated(email)):
-			state.email = email
+			return activationEffect(in: environment, for: token)
+		case let .event(.emailUpdated(text)):
+			state.email = text.map(User.Email.init)
 		case let .event(.authenticated(.success(response))):
 			state.authenticationResponse = response
 		case let .event(.authenticated(.failure(error))):

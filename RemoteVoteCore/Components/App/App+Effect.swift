@@ -53,7 +53,7 @@ extension App {
 private extension App {
 	static func storeEffect(storing accessToken: RemoteVote.API.AccessToken?, in environment: Environment) -> Effect {
 		updatedEffect(for: accessToken)
-			.handleEvents(receiveOutput: { _ in environment.accessToken = accessToken })
+			.handleEvents(receiveOutput: store(accessToken, in: environment))
 			.eraseToEffect()
 	}
 
@@ -65,7 +65,7 @@ private extension App {
 		environment.api!
 			.fetchUser()
 			.publisher(on: .main)
-			.handleEvents(receiveOutput: { environment.user = $0 })
+			.handleEvents(receiveOutput: store(in: environment))
 			.catchToEffect()
 			.map(Action.Event.userFetched)
 			.map(Action.event)
@@ -76,6 +76,18 @@ private extension App {
 			.init(value: .event(.userRetrieved(user))),
 			.fireAndForget { environment.user = user }
 		)
+	}
+
+	static func store(_ accessToken: RemoteVote.API.AccessToken?, in environment: Environment) -> (Action) -> Void {
+		{ _ in
+			environment.accessToken = accessToken
+		}
+	}
+
+	static func store(in environment: Environment) -> (User) -> Void {
+		{ user in
+			environment.user = user
+		}
 	}
 }
 

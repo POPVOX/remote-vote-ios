@@ -11,18 +11,18 @@ import ComposableArchitecture
 extension Login {
 	typealias Effect = ComposableArchitecture.Effect<Action, Never>
 
-	static func authenticationEffect(in environment: Environment, forEmail email: String) -> Effect {
+	static func authenticationEffect(in environment: Environment, using email: User.Email) -> Effect {
 		environment.api
-			.authenticate(withEmail: email)
+			.authenticate(with: email)
 			.publisher(on: .main)
 			.catchToEffect()
 			.map(Action.Event.authenticated)
 			.map(Action.event)
 	}
 
-	static func activationEffect(in environment: Environment, forToken token: String) -> Effect {
+	static func activationEffect(in environment: Environment, for token: RemoteVote.Authorization.API.Activation.Token) -> Effect {
 		environment.api
-			.activate(withToken: token)
+			.activate(with: token)
 			.publisher(on: .main)
 			.retry(1)
 			.catchToEffect()

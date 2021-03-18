@@ -13,10 +13,17 @@ public extension RemoteVote.Authorization {
 }
 
 // MARK: -
-extension RemoteVote.Authorization.API: API {
-	public typealias Request<Resource> = Emissary.Request<Response<Resource>, Self>
-	public typealias Result<Resource> = Swift.Result<Resource, Emissary.NetworkError<Error>>
+public extension RemoteVote.Authorization.API {
+	typealias Result<Resource> = Swift.Result<Resource, Emissary.NetworkError<Error>>
+}
 
+// MARK: -
+extension RemoteVote.Authorization.API {
+	typealias Request<Resource> = Emissary.Request<Response<Resource>, Self>
+}
+
+// MARK: -
+extension RemoteVote.Authorization.API: API {
 	// MARK: API
 	public var baseURL: URL {
 		URL(string: "https://remotevotedev.popvox.com")!

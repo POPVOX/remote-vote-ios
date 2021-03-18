@@ -8,7 +8,7 @@
 
 import Emissary
 
-public extension RemoteVote.Authorization.API {
+extension RemoteVote.Authorization.API {
 	struct Response<Resource> {
 		let wrappedData: WrappedData<Resource>
 	}

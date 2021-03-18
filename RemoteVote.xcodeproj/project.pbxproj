@@ -20,6 +20,10 @@
 		17351E682515077E004AB33C /* RemoteVoteCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 17949861251295090003B2BB /* RemoteVoteCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		17351E6C25151DB3004AB33C /* Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17351E6B25151DB3004AB33C /* Link.swift */; };
 		175FC0A125156CF600503600 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 175FC0A025156CF600503600 /* KeychainAccess */; };
+		177226E626029F7C004C8076 /* Email.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177226E526029F7C004C8076 /* Email.swift */; };
+		177226F326039C3B004C8076 /* RemoteVoteAPIAccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177226F226039C3B004C8076 /* RemoteVoteAPIAccessToken.swift */; };
+		177226FB26039CC6004C8076 /* RemoteVoteAuthorizationAPIActivation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177226FA26039CC6004C8076 /* RemoteVoteAuthorizationAPIActivation.swift */; };
+		1772270026039D74004C8076 /* RemoteVoteAuthorizationAPIActivationToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177226FF26039D74004C8076 /* RemoteVoteAuthorizationAPIActivationToken.swift */; };
 		178D5F8F24C288A0000B9D79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 178D5F8D24C288A0000B9D79 /* LaunchScreen.storyboard */; };
 		179498652512950A0003B2BB /* RemoteVoteCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 179498632512950A0003B2BB /* RemoteVoteCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1794986D251295420003B2BB /* RemoteVote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B397E524C62AE10022F504 /* RemoteVote.swift */; };
@@ -321,6 +325,10 @@
 		17351E6B25151DB3004AB33C /* Link.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Link.swift; sourceTree = "<group>"; };
 		17579FDE25115FAA0061F3B8 /* SelectionState+Presentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SelectionState+Presentation.swift"; sourceTree = "<group>"; };
 		175C218F24EAF40A00B8227D /* Pusher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pusher.swift; sourceTree = "<group>"; };
+		177226E526029F7C004C8076 /* Email.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Email.swift; sourceTree = "<group>"; };
+		177226F226039C3B004C8076 /* RemoteVoteAPIAccessToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteVoteAPIAccessToken.swift; sourceTree = "<group>"; };
+		177226FA26039CC6004C8076 /* RemoteVoteAuthorizationAPIActivation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RemoteVoteAuthorizationAPIActivation.swift; path = Endpoints/RemoteVoteAuthorizationAPIActivation.swift; sourceTree = "<group>"; };
+		177226FF26039D74004C8076 /* RemoteVoteAuthorizationAPIActivationToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteVoteAuthorizationAPIActivationToken.swift; sourceTree = "<group>"; };
 		178D5F7F24C2889C000B9D79 /* RemoteVote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RemoteVote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		178D5F8224C2889C000B9D79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		178D5F8E24C288A0000B9D79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -534,6 +542,15 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		177226E426029F42004C8076 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				17B3979824C5ED360022F504 /* User.swift */,
+				177226E526029F7C004C8076 /* Email.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
 		178D5F7624C2889C000B9D79 = {
 			isa = PBXGroup;
 			children = (
@@ -668,6 +685,7 @@
 				17B397E524C62AE10022F504 /* RemoteVote.swift */,
 				17B397DA24C62AE10022F504 /* RemoteVoteAPI.swift */,
 				17B397D924C62AE10022F504 /* RemoteVoteAPI+Resource.swift */,
+				177226F226039C3B004C8076 /* RemoteVoteAPIAccessToken.swift */,
 				17B397CB24C62AE10022F504 /* RemoteVoteAPIResponse.swift */,
 				17B397DB24C62AE10022F504 /* RemoteVoteAPIError.swift */,
 				17B397DC24C62AE10022F504 /* Authorization */,
@@ -718,7 +736,7 @@
 		17B3979724C5ED270022F504 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				17B3979824C5ED360022F504 /* User.swift */,
+				177226E426029F42004C8076 /* User */,
 				17D7D84A25193E3400544142 /* Group.swift */,
 				17F6F28624DB0241005DD574 /* Vote */,
 			);
@@ -762,6 +780,8 @@
 			children = (
 				17B397E224C62AE10022F504 /* RemoteVoteAuthorization.swift */,
 				17B397E024C62AE10022F504 /* RemoteVoteAuthorizationAPI.swift */,
+				177226FA26039CC6004C8076 /* RemoteVoteAuthorizationAPIActivation.swift */,
+				177226FF26039D74004C8076 /* RemoteVoteAuthorizationAPIActivationToken.swift */,
 				17B397E324C62AE10022F504 /* RemoteVoteAuthorizationAPIResponse.swift */,
 				17B397E124C62AE10022F504 /* RemoteVoteAuthorizationAPIError.swift */,
 				17B397DD24C62AE10022F504 /* Endpoints */,
@@ -1286,6 +1306,7 @@
 				179498D72512964F0003B2BB /* Contact+Presentation.swift in Sources */,
 				179498C42512964F0003B2BB /* Selection.swift in Sources */,
 				1794987A251295420003B2BB /* RemoteVoteAPI+Vote.swift in Sources */,
+				177226E626029F7C004C8076 /* Email.swift in Sources */,
 				17F08BD3251A8E80009D77E6 /* User+Decodable.swift in Sources */,
 				179498B22512964F0003B2BB /* Timer+Effect.swift in Sources */,
 				179498BF2512964F0003B2BB /* Summary.swift in Sources */,
@@ -1329,6 +1350,7 @@
 				179498D62512964F0003B2BB /* Contact.swift in Sources */,
 				1794991B2512AC9F0003B2BB /* ColorAsset+Equatable.swift in Sources */,
 				17949897251295F80003B2BB /* Login+Reducer.swift in Sources */,
+				177226FB26039CC6004C8076 /* RemoteVoteAuthorizationAPIActivation.swift in Sources */,
 				1794988E251295D40003B2BB /* AppAction.swift in Sources */,
 				179498BE2512964F0003B2BB /* ComponentsEnvironment.swift in Sources */,
 				17F08BF4251A8F6B009D77E6 /* VoteType+Decodable.swift in Sources */,
@@ -1346,12 +1368,14 @@
 				179498B12512964F0003B2BB /* Timer.swift in Sources */,
 				17F08C02251A8FBE009D77E6 /* Entry+CodingKeys.swift in Sources */,
 				179498D52512964F0003B2BB /* ConfirmationEnvironment.swift in Sources */,
+				1772270026039D74004C8076 /* RemoteVoteAuthorizationAPIActivationToken.swift in Sources */,
 				17949894251295F80003B2BB /* AuthenticationState.swift in Sources */,
 				179498BA2512964F0003B2BB /* Components+Reducer.swift in Sources */,
 				17949899251295F80003B2BB /* LoginState.swift in Sources */,
 				17F08C1E251A9331009D77E6 /* VoteCastPayload+Encodable.swift in Sources */,
 				179498CA2512964F0003B2BB /* SelectionPhotoState.swift in Sources */,
 				17F08BEF251A8F4A009D77E6 /* ContactInfo+CodingKeys.swift in Sources */,
+				177226F326039C3B004C8076 /* RemoteVoteAPIAccessToken.swift in Sources */,
 				1794987B251295420003B2BB /* Fetched.swift in Sources */,
 				179498CB2512964F0003B2BB /* SelectionAction.swift in Sources */,
 				179498D22512964F0003B2BB /* ConfirmationState.swift in Sources */,

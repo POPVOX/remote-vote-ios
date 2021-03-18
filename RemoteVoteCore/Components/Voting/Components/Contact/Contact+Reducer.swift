@@ -24,5 +24,3 @@ extension Voting.Components.Contact {
 		return .none
 	}
 }
-
-

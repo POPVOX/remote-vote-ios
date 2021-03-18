@@ -8,7 +8,7 @@
 
 import Emissary
 
-public extension RemoteVote.API {
+extension RemoteVote.API {
 	struct Response<Resource>: APIResponse {
 		public let data: Resource
 	}

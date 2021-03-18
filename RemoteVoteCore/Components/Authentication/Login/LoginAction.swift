@@ -20,16 +20,12 @@ public extension Login.Action {
 
 	enum Request {
 		case authenticate
-		case activate(token: String)
+		case activate(token: RemoteVote.Authorization.API.Activation.Token)
 	}
 
 	enum Event {
-		case emailUpdated(String?)
-		case activated(Result<RemoteVote.API.AccessToken>)
+		case emailUpdated(text: String?)
 		case authenticated(Result<String>)
-	}
-
-	static func emailUpdatedEvent(withEmail email: String?) -> Self {
-		.event(.emailUpdated(email))
+		case activated(Result<RemoteVote.API.AccessToken>)
 	}
 }

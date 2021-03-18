@@ -15,7 +15,7 @@ extension User: Decodable {
 		username = try container.decode(String.self, forKey: .username)
 		firstName = try container.decode(String.self, forKey: .firstName)
 		lastName = try container.decode(String.self, forKey: .lastName)
-		email = try container.decode(String.self, forKey: .email)
+		email = try container.decode(Email.self, forKey: .email)
 		avatarURL = try? container.decode(URL.self, forKey: .avatarURL)
 		phoneNumber = try container.decode(String.self, forKey: .phoneNumber)
 	}

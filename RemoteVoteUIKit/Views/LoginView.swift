@@ -31,7 +31,7 @@ public extension Login {
 			showHUD(fetching: \.$accessToken)
 			scope(\.activationState, with: Action.activation, routingTo: Activation.View.self, using: .modal)
 			handleTapping(loginButton) { .request(.authenticate) }
-			handleEditing(emailTextField) { .event(.emailUpdated($0)) }
+			handleEditing(emailTextField) { .event(.emailUpdated(text: $0)) }
 		}
 
 		// MARK: View

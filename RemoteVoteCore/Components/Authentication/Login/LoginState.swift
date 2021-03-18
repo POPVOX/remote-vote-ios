@@ -8,7 +8,7 @@
 
 public extension Login {
 	struct State {
-		var email: String?
+		var email: User.Email?
 
 		@Authorized public internal(set) var accessToken: RemoteVote.API.AccessToken?
 		@Authorized public internal(set) var authenticationResponse: String?
@@ -23,16 +23,9 @@ public extension Login.State {
 	}
 	
 	var canLogIn: Bool {
-		email.map { $0.isValidEmail && !$authenticationResponse.isBeingFetched } ?? false
+		email.map { $0.isValid && !$authenticationResponse.isBeingFetched } ?? false
 	}
 }
 
 // MARK: -
 extension Login.State: Equatable {}
-
-// MARK: -
-private extension String {
-	var isValidEmail: Bool {
-		range(of: ".+@.+\\..+", options: .regularExpression) != nil
-	}
-}

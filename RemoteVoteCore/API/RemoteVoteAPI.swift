@@ -16,16 +16,16 @@ public extension RemoteVote {
 
 // MARK: -
 public extension RemoteVote.API {
-	struct AccessToken {
-		let value: String
-	}
+	typealias Result<Resource> = Swift.Result<Resource, NetworkError<Error>>
+}
+
+// MARK: -
+extension RemoteVote.API {
+	typealias Request<Resource> = Emissary.Request<Response<Resource>, Self>
 }
 
 // MARK: -
 extension RemoteVote.API: API {
-	public typealias Request<Resource> = Emissary.Request<Response<Resource>, Self>
-	public typealias Result<Resource> = Swift.Result<Resource, NetworkError<Error>>
-
 	// MARK: API
 	public var baseURL: URL {
 		let url = URL(string: "https://remotevotedev.popvox.com")!
@@ -43,23 +43,6 @@ extension RemoteVote.API: API {
 
 	public var pathEncodingStrategy: PathEncodingStrategy {
 		.convertToSnakeCase
-	}
-}
-
-// MARK: -
-extension RemoteVote.API.AccessToken: Equatable {}
-
-extension RemoteVote.API.AccessToken: Decodable {
-	public init(from decoder: Decoder) throws {
-		let container = try decoder.singleValueContainer()
-		value = try container.decode(String.self)
-	}
-}
-
-extension RemoteVote.API.AccessToken: Encodable {
-	public func encode(to encoder: Encoder) throws {
-		var container = encoder.singleValueContainer()
-		try container.encode(value)
 	}
 }
 
