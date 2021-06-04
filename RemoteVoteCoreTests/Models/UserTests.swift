@@ -20,7 +20,7 @@ extension UserTests {
 		let username = "brian_babin"
 		let firstName = "Brian"
 		let lastName = "Babin"
-		let email = "brian.babin@mail.house.gov"
+		let email: User.Email = "brian.babin@mail.house.gov"
 		let avatarURL: URL = "https://s3.amazonaws.com/static.popvox.com/remote-vote/avatars/user_10.jpg"
 		let phoneNumber = "543-453-3454"
 

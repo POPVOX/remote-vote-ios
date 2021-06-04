@@ -37,3 +37,9 @@ extension User.Email: Encodable {
 		try container.encode(text)
 	}
 }
+
+extension User.Email: ExpressibleByStringLiteral {
+	public init(stringLiteral value: StringLiteralType) {
+		self.init(text: value)
+	}
+}
