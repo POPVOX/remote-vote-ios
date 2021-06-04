@@ -21,7 +21,7 @@ extension Login {
 			state.$accessToken.indicateFetching()
 			return activationEffect(in: environment, for: token)
 		case let .event(.emailUpdated(text)):
-			state.email = text.map(User.Email.init)
+			state.email = text.map(User.Email.init(text:))
 		case let .event(.authenticated(.success(response))):
 			state.authenticationResponse = response
 		case let .event(.authenticated(.failure(error))):

@@ -42,7 +42,7 @@ extension App.Pusher {
 
 	func publisher(for event: Event, on queue: DispatchQueue) -> AnyPublisher<Void, NetworkError<RemoteVote.API.Error>> {
 		Future { [channel] promise in
-			channel.bind(eventName: event.rawValue) { (_: Any?) in
+			channel.bind(eventName: event.rawValue) { (_: PusherEvent?) in
 				promise(.success(()))
 			}
 		}.eraseToAnyPublisher()

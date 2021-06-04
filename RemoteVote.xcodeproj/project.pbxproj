@@ -160,9 +160,11 @@
 		1794991F2512AD540003B2BB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17B3978F24C5E8F10022F504 /* Images.xcassets */; };
 		179499202512AD560003B2BB /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17B3975524C526270022F504 /* Colors.xcassets */; };
 		179499212512AD590003B2BB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 170212162506A05C006E5A03 /* Localizable.strings */; };
+		17B2583D266AD822004D62A9 /* PusherSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 17B2583C266AD822004D62A9 /* PusherSwift */; };
+		17B2583F266ADC67004D62A9 /* PusherSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 17B2583E266ADC67004D62A9 /* PusherSwift */; };
+		17B25841266ADCEC004D62A9 /* PusherSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 17B25840266ADCEC004D62A9 /* PusherSwift */; };
 		17B49B852512CD520016AFB3 /* Emissary in Frameworks */ = {isa = PBXBuildFile; productRef = 17B49B842512CD520016AFB3 /* Emissary */; };
 		17B49B8A2512CD9F0016AFB3 /* Identity in Frameworks */ = {isa = PBXBuildFile; productRef = 17B49B892512CD9F0016AFB3 /* Identity */; };
-		17B49B992512CF870016AFB3 /* PusherSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 17B49B982512CF870016AFB3 /* PusherSwift */; };
 		17B49B9E2512D7240016AFB3 /* Granular in Frameworks */ = {isa = PBXBuildFile; productRef = 17B49B9D2512D7240016AFB3 /* Granular */; };
 		17D7D83625193D1D00544142 /* UserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D7D83525193D1D00544142 /* UserTests.swift */; };
 		17D7D84225193D6700544142 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D7D84125193D6700544142 /* JSON.swift */; };
@@ -429,6 +431,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				17351E6525150746004AB33C /* RemoteVoteUIKit.framework in Frameworks */,
+				17B2583D266AD822004D62A9 /* PusherSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,7 +442,7 @@
 				17B49B9E2512D7240016AFB3 /* Granular in Frameworks */,
 				17351E4825144070004AB33C /* ComposableArchitecture in Frameworks */,
 				175FC0A125156CF600503600 /* KeychainAccess in Frameworks */,
-				17B49B992512CF870016AFB3 /* PusherSwift in Frameworks */,
+				17B2583F266ADC67004D62A9 /* PusherSwift in Frameworks */,
 				17B49B852512CD520016AFB3 /* Emissary in Frameworks */,
 				17B49B8A2512CD9F0016AFB3 /* Identity in Frameworks */,
 			);
@@ -452,6 +455,7 @@
 				17EE6F9F2512DF6E0028A65E /* Hull in Frameworks */,
 				17EE6FB92512F04E0028A65E /* JGProgressHUD in Frameworks */,
 				170D82462513B3E900BAEB5E /* ActiveLabel in Frameworks */,
+				17B25841266ADCEC004D62A9 /* PusherSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1100,6 +1104,7 @@
 			);
 			name = RemoteVote;
 			packageProductDependencies = (
+				17B2583C266AD822004D62A9 /* PusherSwift */,
 			);
 			productName = RemoteVote;
 			productReference = 178D5F7F24C2889C000B9D79 /* RemoteVote.app */;
@@ -1122,10 +1127,10 @@
 			packageProductDependencies = (
 				17B49B842512CD520016AFB3 /* Emissary */,
 				17B49B892512CD9F0016AFB3 /* Identity */,
-				17B49B982512CF870016AFB3 /* PusherSwift */,
 				17B49B9D2512D7240016AFB3 /* Granular */,
 				17351E4725144070004AB33C /* ComposableArchitecture */,
 				175FC0A025156CF600503600 /* KeychainAccess */,
+				17B2583E266ADC67004D62A9 /* PusherSwift */,
 			);
 			productName = RemoteVoteCore;
 			productReference = 17949861251295090003B2BB /* RemoteVoteCore.framework */;
@@ -1150,6 +1155,7 @@
 				17EE6F9E2512DF6E0028A65E /* Hull */,
 				17EE6FB82512F04E0028A65E /* JGProgressHUD */,
 				170D82452513B3E900BAEB5E /* ActiveLabel */,
+				17B25840266ADCEC004D62A9 /* PusherSwift */,
 			);
 			productName = RemoteVoteUIKit;
 			productReference = 179498EE2512AA300003B2BB /* RemoteVoteUIKit.framework */;
@@ -1212,12 +1218,12 @@
 				179499242512B8190003B2BB /* XCRemoteSwiftPackageReference "Hull" */,
 				17B49B812512CD3F0016AFB3 /* XCRemoteSwiftPackageReference "Emissary" */,
 				17B49B862512CD780016AFB3 /* XCRemoteSwiftPackageReference "Identity" */,
-				17B49B952512CF760016AFB3 /* XCRemoteSwiftPackageReference "pusher-websocket-swift" */,
 				17B49B9A2512D19B0016AFB3 /* XCRemoteSwiftPackageReference "Granular" */,
 				17EE6FB72512F04E0028A65E /* XCRemoteSwiftPackageReference "JGProgressHUD" */,
 				170D82442513B3E900BAEB5E /* XCRemoteSwiftPackageReference "ActiveLabel.swift" */,
 				17351E39251434B2004AB33C /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
 				175FC09F25156CF600503600 /* XCRemoteSwiftPackageReference "KeychainAccess" */,
+				17B2583B266AD822004D62A9 /* XCRemoteSwiftPackageReference "pusher-websocket-swift" */,
 			);
 			productRefGroup = 178D5F8024C2889C000B9D79 /* Products */;
 			projectDirPath = "";
@@ -1895,6 +1901,14 @@
 				kind = branch;
 			};
 		};
+		17B2583B266AD822004D62A9 /* XCRemoteSwiftPackageReference "pusher-websocket-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pusher/pusher-websocket-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.2.2;
+			};
+		};
 		17B49B812512CD3F0016AFB3 /* XCRemoteSwiftPackageReference "Emissary" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Fleuronic/Emissary.git";
@@ -1909,14 +1923,6 @@
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 0.3.0;
-			};
-		};
-		17B49B952512CF760016AFB3 /* XCRemoteSwiftPackageReference "pusher-websocket-swift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/pusher/pusher-websocket-swift.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 8.0.0;
 			};
 		};
 		17B49B9A2512D19B0016AFB3 /* XCRemoteSwiftPackageReference "Granular" */ = {
@@ -1953,6 +1959,21 @@
 			package = 175FC09F25156CF600503600 /* XCRemoteSwiftPackageReference "KeychainAccess" */;
 			productName = KeychainAccess;
 		};
+		17B2583C266AD822004D62A9 /* PusherSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 17B2583B266AD822004D62A9 /* XCRemoteSwiftPackageReference "pusher-websocket-swift" */;
+			productName = PusherSwift;
+		};
+		17B2583E266ADC67004D62A9 /* PusherSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 17B2583B266AD822004D62A9 /* XCRemoteSwiftPackageReference "pusher-websocket-swift" */;
+			productName = PusherSwift;
+		};
+		17B25840266ADCEC004D62A9 /* PusherSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 17B2583B266AD822004D62A9 /* XCRemoteSwiftPackageReference "pusher-websocket-swift" */;
+			productName = PusherSwift;
+		};
 		17B49B842512CD520016AFB3 /* Emissary */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 17B49B812512CD3F0016AFB3 /* XCRemoteSwiftPackageReference "Emissary" */;
@@ -1962,11 +1983,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 17B49B862512CD780016AFB3 /* XCRemoteSwiftPackageReference "Identity" */;
 			productName = Identity;
-		};
-		17B49B982512CF870016AFB3 /* PusherSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 17B49B952512CF760016AFB3 /* XCRemoteSwiftPackageReference "pusher-websocket-swift" */;
-			productName = PusherSwift;
 		};
 		17B49B9D2512D7240016AFB3 /* Granular */ = {
 			isa = XCSwiftPackageProductDependency;
